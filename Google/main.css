@@ -1,0 +1,70 @@
+    #image{
+        margin-top:100px ;
+        height:300px;
+        width: 500px;
+        text-align: center;
+        display: inline-block;
+
+    }
+
+    .container-img{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    h2{
+        padding-top: 5px;
+        
+    }
+    .footer-content {
+        text-align: center; /* İçeriği yatayda ortala */
+        position: absolute; /* Mutlak konumlandırma kullan */
+        left: 50%; /* Sol kenarı sayfanın yarısına getir */
+        transform: translateX(-50%); /* Elementin yarısını sola kaydırarak tam ortalamayı sağla */
+        width: 100%; /* Genişlik 100% olacak şekilde ayarla */
+        bottom: 0; /* Sayfanın en altına yerleştir */
+        background-color: #f1f1f1; /* Opsiyonel: Arkaplan rengini ayarla */
+        padding: 10px; /* Opsiyonel: Kenar boşluğunu ayarla */
+        box-sizing: border-box; /* Box modelini kullan */
+    }
+    #search-input{
+        padding-bottom: 5px;
+        border-radius: 2px;
+        border: 1px solid;
+    }
+
+    .search{
+        text-align: center;
+        margin: auto;
+        padding:0;
+        background-color: rgb(209, 209, 209);
+        
+    }
+
+    #search-input{
+        width: 500px;
+        height: 20px;
+    }
+
+    .container-bottom {
+        background-color: white;
+        overflow: hidden; /* Clearfix için kullanılır */
+    }
+    
+    .container-left,
+    .container-mid,
+    .container-right {
+        float: left;
+        width: calc(33.33% - 5px); /* 3 konteynerin toplam genişliği %100 olmalı, kenar boşlukları çıkarıldı */
+        margin-right: 5px;
+        margin-top: 2px;
+        background-color: aquamarine;
+        box-sizing: border-box; /* Padding ve border'ları genişlik dahilinde hesaplamak için */
+        padding-bottom: 10px; /* container-left'deki padding */
+    }
+    
+    .container-mid,
+    .container-right {
+        height: 106px; /* container-mid ve container-right'ın yüksekliği */
+    }
